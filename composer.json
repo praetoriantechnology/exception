@@ -1,0 +1,23 @@
+{
+  "name": "praetoriantechnology/exception",
+  "type": "symfony-bundle",
+  "autoload": {
+    "psr-4": {"Praetorian\\Exception\\": "src/"}
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Praetorian\\Tests\\Exception\\": "tests/"
+    }
+  },
+  "scripts": {
+    "fix": "./vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix",
+    "test": "./vendor/phpunit/phpunit/phpunit"
+  },  
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.18",
+    "phpunit/phpunit": "^9.0"
+  },
+  "require": {
+    
+  }
+}
