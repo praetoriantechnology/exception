@@ -2,9 +2,7 @@
 
 namespace Praetorian\Exception;
 
-use Exception;
-
-class InvalidPromotionException extends Exception
+class InvalidPromotionException extends PraetorianException
 {
     public function __construct()
     {

@@ -2,9 +2,7 @@
 
 namespace Praetorian\Exception;
 
-use Exception;
-
-class DataAwareException extends Exception
+class DataAwareException extends PraetorianException
 {
     protected array $data;
 

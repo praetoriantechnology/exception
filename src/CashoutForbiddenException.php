@@ -1,9 +1,8 @@
 <?php
 
 namespace Praetorian\Exception;
-use Exception;
 
-class CashoutForbiddenException extends Exception
+class CashoutForbiddenException extends PraetorianException
 {
     private const MESSAGE = 'Cashout forbidden';
 

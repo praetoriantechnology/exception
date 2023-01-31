@@ -2,10 +2,9 @@
 
 namespace Praetorian\Exception;
 
-use Exception;
 use Throwable;
 
-class PublisherException extends Exception
+class PublisherException extends PraetorianException
 {
     public function __construct($message = '', $code = 0, Throwable $previous = null)
     {
