@@ -8,7 +8,7 @@ class DataAwareException extends PraetorianException
 
     public function __construct($message = '', array $data = [])
     {
-        parent::__construct($message);
+        parent::__construct($message, 400);
         $this->setData($data);
     }
 
