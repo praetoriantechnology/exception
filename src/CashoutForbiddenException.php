@@ -8,6 +8,6 @@ class CashoutForbiddenException extends PraetorianException
 
     public function __construct()
     {
-        parent::__construct(self::MESSAGE);
+        parent::__construct(self::MESSAGE, 403);
     }
 }
