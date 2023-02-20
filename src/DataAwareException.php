@@ -2,15 +2,13 @@
 
 namespace Praetorian\Exception;
 
-use Exception;
-
-class DataAwareException extends Exception
+class DataAwareException extends PraetorianException
 {
     protected array $data;
 
     public function __construct($message = '', array $data = [])
     {
-        parent::__construct($message);
+        parent::__construct($message, 400);
         $this->setData($data);
     }
 

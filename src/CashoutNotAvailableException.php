@@ -1,9 +1,8 @@
 <?php
 
 namespace Praetorian\Exception;
-use Exception;
 
-class CashoutNotAvailableException extends Exception
+class CashoutNotAvailableException extends PraetorianException
 {
     private const MESSAGE = 'Cashout not available';
 
