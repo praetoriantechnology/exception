@@ -1,14 +1,13 @@
 <?php
 
 namespace Praetorian\Exception;
-use Exception;
 
-class CashoutForbiddenException extends Exception
+class CashoutForbiddenException extends PraetorianException
 {
     private const MESSAGE = 'Cashout forbidden';
 
     public function __construct()
     {
-        parent::__construct(self::MESSAGE);
+        parent::__construct(self::MESSAGE, 403);
     }
 }
